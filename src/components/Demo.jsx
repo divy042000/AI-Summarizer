@@ -1,11 +1,11 @@
 import React from 'react'
 
-function App() {
+const Demo = () => {
   return (
     <div>
-      APp
+      
     </div>
   )
 }
 
-export default App
+export default Demo
