@@ -9,7 +9,7 @@
 .main {
   width: 100vw;
   min-height: 100vh;
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: center;
   padding: 120px 24px 160px 24px;
@@ -71,13 +71,59 @@ position: absolute;
 
 /* Tailwind Styles */
 
+
 .app {
   @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
 
 .black_btn {
-  @apply rounded-full border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black;
+  height: 30px;
+  margin: 4px;
+  width: 120px;
+  background: linear-gradient(145deg, #2e2d2d, #686868);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Consolas, Courier New, monospace;
+  border: solid #404C5D 1px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border-radius: 12px;
+  -webkit-box-shadow: -1px -5px 15px #41465B, 
+               5px  5px 15px #41465B, 
+    inset      5px  5px 10px #212121, 
+    inset     -5px -5px 10px #212121;
+  box-shadow: -1px -5px 15px #41465B, 
+               5px  5px 15px #41465B, 
+    inset      5px  5px 10px #212121, 
+    inset     -5px -5px 10px #212121;
 }
+
+.black_btn:hover {
+  -webkit-box-shadow: 1px 1px 13px #20232e,
+                    -1px -1px 13px #545b78;
+  box-shadow: 1px 1px 13px #20232e,
+             -1px -1px 13px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.black_btn:active {
+  -webkit-box-shadow: 1px 1px 13px #20232e,
+                     -1px -1px 33px #545b78;
+  box-shadow: 1px 1px 13px #20232e,
+             -1px -1px 33px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
 
 .head_text {
   @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl text-center;
@@ -114,3 +160,5 @@ position: absolute;
 .summary_box {
   @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-4;
 }
+
+
