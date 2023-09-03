@@ -1,7 +1,3 @@
-# Deployed Project : https://64f4c0ca8d3917364654def0--dreamy-pavlova-c3e5fb.netlify.app/
-
-
-
 
 # React + Vite
 
